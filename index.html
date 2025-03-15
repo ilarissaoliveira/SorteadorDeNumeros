@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador de número</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <h1>Sorteador de números</h1>
+    </header>
+    <section id="dados">
+        <div class="container_dados">
+            <div class="container_campo">
+                <h1><p><label class="texto__paragrafo">Quantidade de números a serem sorteados:</label></p></h1>
+                <input class="container__input" id="qtotal" type="number" min="1">
+                      
+                <h1><label class="texto__paragrafo">De:</label></h1>
+                <input class="container__input" id="numini" type="number" min="1">
+                
+                <h1><label class="texto__paragrafo">Até:</label></h1>
+                <input class="container__input" id="numfim" type="number" min="1">
+            </div>
+
+            <div class="botoes">
+                <button onclick="sortear()" id="bt-sortear" class="container__botao">Sortear</button>
+                <button onclick="reiniciar()" id="bt-reiniciar" class="container__botao-off">Reiniciar</button>
+            </div>
+
+            <div class="container__resultado" id="resultado">
+                <h1><label class="texto__paragrafo"></label></h1>
+            </div>
+            
+            
+        </div>
+    </section>
+    <script src="/app.js"></script>
+    
+</body>
+</html>
